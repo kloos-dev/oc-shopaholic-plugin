@@ -19,6 +19,8 @@ use Lovata\Shopaholic\Classes\Import\ImportProductModelFromXML;
  */
 class Products extends Controller
 {
+    const EVENT_EXTEND_TOOLBAR = 'shopaholic.products.extendToolbar';
+
     public $implement = [
         'Backend.Behaviors.ListController',
         'Backend.Behaviors.FormController',
